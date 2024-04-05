@@ -1,5 +1,4 @@
 // console.log("Image Gallery");
-debugger;
 const thumbContainer = document.getElementById("thumb-container");
 const displayImage = document.getElementById("screen-image");
 
