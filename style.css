@@ -25,14 +25,18 @@ body {
 }
 
 #thumb-container {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 90px;
-  width: 400px;
+  height: 80px;
+  width: 330px;
   position: absolute;
   top: 3vh;
   bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
   overflow: scroll;
+  border: 1px solid black;
 }
 
 #thumb-container img {
