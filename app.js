@@ -43,17 +43,23 @@ function createThumbnail() {
     img.alt = image.alt;
     thumbContainer.appendChild(img);
     img.addEventListener("click", function () {
-      createBigImage(image);
+      createMainImage(image);
+      img.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      }); //scrolls the thumbnail to the centre
     });
   });
 }
 
-function createBigImage(image) {
+//Creates
+function createMainImage(image) {
   displayImage.innerHTML = "";
-  const bigImg = document.createElement("img");
-  bigImg.src = image.url;
-  bigImg.alt = image.alt;
-  displayImage.appendChild(bigImg);
+  const mainImg = document.createElement("img");
+  mainImg.src = image.url;
+  mainImg.alt = image.alt;
+  displayImage.appendChild(mainImg);
 }
 createThumbnail();
-createBigImage(images[0]);
+createMainImage(images[0]); //sets to first image in the array

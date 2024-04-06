@@ -30,16 +30,20 @@ MUST DO
 
 🎯 Display the thumbnail images. Will you use a grid, or a list? Will you use CSS Grid or Flexbox?
 
-    IN PROGRESS:  I will be looking to initially display using postion relative and absolute.There will be a maximum of three thumbnail images and if possible I will look for the image to scroll.
+    DONE:  I will be looking to initially display using flexbox and a combination of postion relative and absolute.There will be a maximum of three thumbnail images and if possible I will look for the image to scroll.
+
+    Scroll added on the thumbnails, I will be looking at adding a navigation button
 
 🎯 Display the larger image. Will you use an overlay of some kind, or a section on the same page? How would it work on smaller screens?
 size set for mobile: XXXX TBC
 
-    IN PROGRESS: Larger screens will have the thumbnails displayed at the top, for mobiles they will display at the bottom. T
+    IN PROGRESS: Larger screens will have the thumbnails displayed at the top, for mobiles they will display at the bottom.
+
+    The CSS was problematic to get to work, I ended needing to create a new vscode project to play with just the positioning of the image to get it to resize as I needed
 
 🎯 Handle user interaction. Will you use event listeners on the thumbnails, or on the container? How will you know which thumbnail was selected?
 
-    IN PROGRESS:
+    IN PROGRESS: My initial thoughts would be to the array to call the next image number, at the last one I would go back to 0
 
 STRECH GOALS
 
@@ -62,4 +66,4 @@ Describing errors or bugs you encountered while completing your assignment.
 
   </div>
 
-I couldn't understand why the thumbnail images were't showing, I realised that as part of the process the
+I couldn't understand why the thumbnail images were't showing, after debugging I realised this was due to my that as part of the process the
