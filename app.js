@@ -49,6 +49,7 @@ function createThumbnail() {
     const img = document.createElement("img");
     img.src = image.url;
     img.alt = image.alt;
+    img.tabIndex = 0; // Add tabindex for accessibility
     thumbContainer.appendChild(img);
     img.addEventListener("click", function () {
       createMainImage(image);
@@ -58,6 +59,14 @@ function createThumbnail() {
         inline: "center",
       }); //scrolls the thumbnail to the centre
     });
+    // added for accessibility for the enter key
+    img.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        // Check if the pressed key is the return key
+        createMainImage(image);
+      }
+    });
+
     preloadImage(image.url);
   });
 }
