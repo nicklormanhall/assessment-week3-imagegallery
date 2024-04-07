@@ -49,7 +49,7 @@ function createThumbnail() {
     const img = document.createElement("img");
     img.src = image.url;
     img.alt = image.alt;
-    img.tabIndex = 0; // Add tabindex for accessibility
+    img.tabIndex = 1; // Add tabindex for accessibility
     thumbContainer.appendChild(img);
     img.addEventListener("click", function () {
       createMainImage(image);
