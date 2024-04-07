@@ -1,5 +1,7 @@
 # assessment-week3-imagegallery
 
+Notes added to Moodle & README.md
+
 Week 3 Project: Building an accessible image gallery Overview Building on HTML, CSS and JavaScript skills from previous weeks, we'll build an accessible image gallery with keyboard navigation and maybe even voice announcements.
 
 User Stories
@@ -26,18 +28,17 @@ MUST DO
 
 🎯 Plan out the UI and consider the elements you'll need to include to support the stories. Will thumbnails take up space at the top, side or bottom of the page? Will they float over the image?
 
-    DONE: I completed my initial layout design on figma. I decided to have the thumbnail images centered at the top at the top for desktop there will be a small margin. I wanted the site to be simple to use and unclutered. I wanted to keep the focus being on the images with functionality being seemless.
+    DONE: I completed my initial layout design on figma. I decided to have the thumbnail images centered at the top at the top for desktop, there will be a small margin. I wanted the site to be simple to use and uncluttered. I wanted to keep the focus being on the images with functionality being seemless.
 
 🎯 Display the thumbnail images. Will you use a grid, or a list? Will you use CSS Grid or Flexbox?
 
-    DONE:  I will be looking to initially display using flexbox and a combination of postion relative and absolute.There will be a maximum of three thumbnail images and if possible I will look for the image to scroll.
+    DONE: I will be looking to initially display using flexbox and a combination of position relative and absolute.There will be a maximum of three thumbnail images and if possible I will look for the image to scroll.
 
     Scroll added on the thumbnails and the thumbnail in centred when clicked on
 
 🎯 Display the larger image. Will you use an overlay of some kind, or a section on the same page? How would it work on smaller screens?
-size set for mobile: XXXX TBC
 
-    DONE: Larger screens will have the thumbnails displayed at the top, for screens with of less than 480the thumbnails will display at the bottom.
+    DONE: Larger screens will have the thumbnails displayed at the top, for screens with of less than 480 the thumbnails will display at the bottom.
 
     The CSS was problematic to get to work, I ended needing to create a new vscode project to play with just the positioning of the image to get it to resize as I needed
 
@@ -51,21 +52,23 @@ The stretch goals I wanted to focus on were:
 
 🏹 Handle user interaction with keyboard only (as if they have no mouse). You can use tab and enter/space like for all websites, but will you enable the use of the arrow keys as well?
 
-DONE: The pages opens onto the thumbnail, pressing tab takes the user through each thumbnail, by pressing Return/Enter the large image is then replaces
+    DONE: The pages opens onto the thumbnail, pressing tab takes the user through each thumbnail, by pressing Return/Enter the large image is then replaces
 
 🏹 Use your operating system's voiceover tools or a Screen Reader to have the computer announce the alt text of the selected image.
 
-✨ Using role="status" like this will cause the voiceover to read out the content inside whenever it changes. Create a div, select it by id, and then try changing it's .textContext property with JS. <div id="announcer" role="status" aria-live="assertive" aria-atomic="true"></div>
+    DONE: using the mac voiceover tool I was able to listen to the descriptions.
 
 https://nicklormanhall.github.io/assessment-week3-imagegallery/(live) https://github.com/nicklormanhall/assessment-week3-imagegallery (github repo)
 
 Describing errors or bugs you encountered while completing your assignment.
 
-    I has a problem when I looked to put my thumb-container as below
+I initially has a problem when I looked to put my thumb-container as below
 
-        <div id="screen-image">
-      <div id="thumb-container"></div>
+<div id="screen-image">
+<div id="thumb-container"></div>
 
-  </div>
+</div>
 
-I couldn't understand why the thumbnail images were't showing, after debugging I realised this was due to my that as part of the process the
+It took me a while to understand why the thumbnail images were't showing, I finally located the problem after running the debug.
+
+The CSS took a good number of hours to correct
