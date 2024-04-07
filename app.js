@@ -35,6 +35,14 @@ const images = [
   },
 ];
 
+function preloadImage(url) {
+  const link = document.createElement("link");
+  link.rel = "preload";
+  link.href = url;
+  link.as = "image";
+  document.head.appendChild(link);
+}
+
 //Creates Thumbnail
 function createThumbnail() {
   images.forEach(function (image) {
@@ -50,6 +58,7 @@ function createThumbnail() {
         inline: "center",
       }); //scrolls the thumbnail to the centre
     });
+    preloadImage(image.url);
   });
 }
 

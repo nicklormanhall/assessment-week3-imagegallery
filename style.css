@@ -47,3 +47,20 @@ body {
   flex-shrink: 0;
   align-items: center;
 }
+
+@media (max-width: 480px) {
+  #thumb-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90px;
+    width: 330px;
+    position: absolute;
+    bottom: 3vh;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: scroll;
+    /* border: 1px solid black; */
+  }
+}
