@@ -10,7 +10,7 @@ const images = [
   },
   {
     url: "https://images.unsplash.com/photo-1499792476072-fb84838c5f83?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "a ski lift going up a snowy mountai",
+    alt: "a ski lift going up a snowy mountain",
     //https://unsplash.com/photos/a-ski-lift-going-up-a-snowy-mountain-QV58wLRuV6I
   },
   {
